@@ -1,60 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ass2</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="container_fluid">
         <div class="flex-container navbar">
 
-        
-        <div> <img src="./assets/IMG_1748 1.png" alt="logo"> </div>
-        <div><hr class="line"></div>
+
+            <div> <img src="./assets/IMG_1748 1.png" alt="logo"> </div>
             <div>
-            <ul class="flex-container nav_items">
-                <li class="items"><a href="#expedition">EXPEDITIONS</a></li>
-                <li class="items"><a href="#gallery">GALLAEY</a></li>
-                <li class="items"><a href="#faq">FAQ</a></li>
-                <li>
-                    <button class="flex-container button">
+                <hr class="line">
+            </div>
+            <div>
+                <ul class="flex-container nav_items">
+                    <li class="items"><a href="#expedition">EXPEDITIONS</a></li>
+                    <li class="items"><a href="#gallery">GALLAEY</a></li>
+                    <li class="items"><a href="#faq">FAQ</a></li>
+                    <li>
+                        <button class="flex-container button">
                         CONTACT
-                        <img src="./assets/Group 1.png" id="icon" alt="arrow_icon">
+                        <img src="./assets/Group 1.png" class="icon" alt="arrow_icon">
                     </button>
-                </li>
-               
+                    </li>
 
-            </ul>
+
+                </ul>
             </div>
-            </div>
-        
-        <div class="flex-container banner_content">
-           <div class="banner_head"><h1>Explore</h1></div> 
-           <div class="banner_p1"> <p>Untamed Wilderness</p></div>
-            <div class="banner_p2"><p>Now operating in Jordan</p></div>
-            <button class=" flex-container button">KNOW MORE
-            <img src="./assets/Group 1.png" id="arrow" alt="arrow_icon"> </button>
         </div>
 
-        </div>
-    
     </header>
 
-    <main class="container">
-     <section class="flex-container about_section">
-<div>
-    <h1 class="section_h1">About</h1>
-    <h2 class="section_h2">Welcome to SeaMonkey Expeditions, Jordan's Premier Wildlife Experience!</h2>
-    <p class="section_p">At SeaMonkey Expeditions, we are dedicated to showcasing the remarkable wildlife of Jordan. Join us on an unforgettable journey to witness the Arabian Oryx, stunning birds, graceful water buffalos, and thriving marine life. Our passion for nature and commitment to responsible ecotourism ensure an extraordinary adventure you'll cherish forever. Let us guide you through the untouched beauty of Jordan and its diverse ecosystems, while contributing to the conservation efforts that protect these precious species.</p>
-       </div>
-  <aside>
-<img src="./assets/Group 11.png" alt="expolre">
-  </aside>
+    <banner class="flex-container banner_content">
 
-</section>
+        <div class="banner_head">
+            <h1>Explore</h1>
+        </div>
+        <div class="banner_p1">
+            <p>Untamed Wilderness</p>
+        </div>
+        <div class="banner_p2">
+            <p>Now operating in Jordan</p>
+        </div>
+        <button class=" flex-container button">KNOW MORE
+            <img src="./assets/Group 1.png" class="icon" alt="arrow_icon"> </button>
 
+    </banner>
+
+
+    <main>
+
+        <section id="about" class="container-fluid about_section">
+            <div class="container flex">
+                <div class="about_content ">
+                    <h1 class="section_h1 ">About</h1>
+                    <h2 class="section_h2 ">Welcome to SeaMonkey Expeditions, Jordan's Premier Wildlife Experience!</h2>
+                    <p class="section_p ">At SeaMonkey Expeditions, we are dedicated to showcasing the remarkable wildlife of Jordan. Join us on an unforgettable journey to witness the Arabian Oryx, stunning birds, graceful water buffalos, and thriving marine life. Our passion
+                        for nature and commitment to responsible ecotourism ensure an extraordinary adventure you'll cherish forever. Let us guide you through the untouched beauty of Jordan and its diverse ecosystems, while contributing to the conservation
+                        efforts that protect these precious species.</p>
+                </div>
+                <aside class="container">
+                    <img src="./assets/Group 11.png " alt="expolre ">
+                </aside>
+            </div>
+        </section>
+
+
+        <article class="article_content ">
+            <div>
+                <h1 class="expeditions ">Expeditions</h1>
+            </div>
+            <div>
+                <h2 class="style ">Choose your exploration style </h2>
+            </div>
+            <div class="flex-container all_types ">
+                <img src="./assets/Group 10.png " alt="all_trips ">
+                <img src="./assets/Group 7.png " alt="hiking ">
+                <img src="./assets/Group 6.png " alt="camping ">
+                <img src="./assets/Group 8.png " alt="sea_safari ">
+                <img src="./assets/Group 9.png " alt="vehicle_safari ">
+            </div>
+            <div class="flex-container activity">
+                <div>
+                    <img src="./assets/bird_watching_truck.png" alt="bird_watching_truck">
+                    <img src="./assets/hike.png" class="hike" alt="hike">
+                </div>
+                <div>
+                    <img src="./assets/suba_dive.png" alt="suba_dive">
+                    <img src="" alt="">
+                </div>
+
+                <img src="./assets/wild_hike.png" alt="wild_hike">
+            </div>
+        </article>
     </main>
 </body>
+
 </html>

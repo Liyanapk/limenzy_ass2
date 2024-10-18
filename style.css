@@ -1,162 +1,233 @@
-        
-        /* font style */
-        @font-face {
-            font-family: 'bBagian'; 
-            src: url('./assets/bBagian.otf') format('opentype'); }
-
-            @font-face { font-family: 'Manrope'; 
-            src: url('./assets/Manrope-Bold.ttf') format('opentype'); }
-
-            @font-face { font-family: 'Manrope'; 
-            src: url('./assets/Manrope-SemiBold.ttf') format('opentype'); 
-        }
-        @font-face { font-family: 'Manrope'; 
-            src: url('./assets/Manrope-Regular.ttf') format('opentype'); 
-        }
-        
-        
-        /* Global Style */
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-        
-        
-        
-        .container-fluid {
-            margin: 0 auto;
-            max-width: 100%;
-       
-            
-        }
-
-        
-        .container {
-            margin: 0 auto;
-            max-width: 100%;
-       
-            
-        }
+    /* font style */
     
-    header{
-        width: 100%;
-        height: 650px;
-         background-image: url('./assets/Rectangle\ 3.png');
-         background-size: cover; 
- 
-
-         
+    @font-face {
+        font-family: 'bBagian';
+        src: url('./assets/bBagian.otf') format('opentype');
     }
- .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    padding-top: 10px;
     
-.line{
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./assets/Manrope-Bold.ttf') format('opentype');
+    }
     
-    width: 1000px;
-    height: 0px;
-    margin: 50px auto;
-    align-items: center;
-    background-color: white; 
-   
-}
- }
- .nav_items{
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    list-style: none;
-    align-items: center;
-    padding-top: 30px;
-    font-size: 16px;
-
- }
- .items a {
-    color: white; 
-    text-decoration: none;
-}
-
-.button{
-color:white;
-font-size: 16px;
-background-color: #006FF9;
-min-width: 159px;
-min-height: 42px;
-border-radius: 5px 5px 5px 5px;
-display: flex; 
-align-items: center; 
-justify-content: center; 
-gap: 1em;
-
-
-}
-#icon {
-    width: 14px; 
-    height: auto; 
-}
-
-
-.banner_content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8% 0% 0% 0%;
-    color: white;
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./assets/Manrope-SemiBold.ttf') format('opentype');
+    }
     
-}
-
-.banner_head {
-    font-family: 'bBagian', sans-serif; 
-    line-height: 150px;
-    font-size: 70px;
-    font-weight: 400;
+    @font-face {
+        font-family: 'Manrope';
+        src: url('./assets/Manrope-Regular.ttf') format('opentype');
+    }
+    /* Global Style */
     
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
     
+    .container-fluid {
+        margin: 0 auto;
+        max-width: 100%;
+    }
     
-}
-
-.banner_p1{
-    font-family: 'Manrope', sans-serif;
-font-size: 48px;
-font-weight: 800;
-line-height: 65.57px;
-
-}
-
-.banner_p2{
-    font-family: 'Manrope', sans-serif;
-font-size: 24px;
-font-weight: 500;
-line-height: 40px;
-padding: 40px 0px 0px 0px;
-
-}
-
-.about_section{
-    display: flex;
-    flex-direction: row;
+    .container {
+        margin: 0 auto;
+        padding: 0 auto;
+        max-width: 1200px;
+    }
     
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
+    .flex {
+        display: flex;
+    }
     
+    header {
+        position: fixed;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
     
-}
-
-.section_h1{
-
-}
-.section_h2{
-    width: 585px;
-}
-
-.section_p{
-width: 585px;
-}
+    banner {
+        width: 100%;
+        height: auto;
+        background-image: url('./assets/Rectangle\ 3.png');
+        background-repeat: no-repeat;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        place-content: center;
+        padding-top: 10px;
+        gap: 2em;
+    }
+    
+    .line {
+        width: 547px;
+        height: 0px;
+        margin: 50px auto;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .nav_items {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        list-style: none;
+        align-items: center;
+        padding-top: 30px;
+    }
+    
+    .items a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .button {
+        color: white;
+        background-color: #006FF9;
+        min-width: 159px;
+        min-height: 42px;
+        border-radius: 5px 5px 5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+    
+    .icon {
+        width: 14px;
+        height: auto;
+    }
+    
+    .banner_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8% 0% 0% 0%;
+        color: white;
+    }
+    
+    .banner_head {
+        font-family: 'bBagian', sans-serif;
+        line-height: 150px;
+        font-size: 70px;
+        font-weight: 400;
+    }
+    
+    .banner_p1 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 65.57px;
+    }
+    
+    .banner_p2 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        padding: 40px 0px 0px 0px;
+    }
+    
+    .about_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .about_content {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-top: 10%;
+        gap: 2em;
+    }
+    
+    .section_h1 {
+        font-family: 'bBagian', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 43.59px;
+        letter-spacing: 2.200000047683716px;
+        text-align: left;
+    }
+    
+    .section_h2 {
+        width: 585px;
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+    
+    .section_p {
+        width: 585px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    
+    .side_line {
+        width: 200px;
+        height: 630px;
+        padding: 10% 0% 0% 0%;
+    }
+    
+    .article_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0% 0% 0%;
+        gap: 0.5em;
+    }
+    
+    .expeditions {
+        font-family: 'bBagian', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 39.23px;
+        letter-spacing: 0.02em;
+    }
+    
+    .style {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    .all_types {
+        display: flex;
+        flex-direction: row;
+        gap: 8em;
+        padding: 40px;
+    }
+    
+    .activity {
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        padding: 6%;
+        position: relative;
+    }
+    
+    .hike {
+        position: absolute;
+        left: 31%;
+    }
+    
+    #about {
+        background-image: url(./assets/side_line_image.png);
+        background-repeat: no-repeat;
+    }
