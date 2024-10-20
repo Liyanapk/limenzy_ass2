@@ -1,48 +1,55 @@
-    /* font style */
+        /* font style */
     
-    @font-face {
-        font-family: 'bBagian';
-        src: url('./assets/bBagian.otf') format('opentype');
-    }
-    
-    @font-face {
-        font-family: 'Manrope';
-        src: url('./assets/Manrope-Bold.ttf') format('opentype');
-    }
-    
-    @font-face {
-        font-family: 'Manrope';
-        src: url('./assets/Manrope-SemiBold.ttf') format('opentype');
-    }
-    
-    @font-face {
-        font-family: 'Manrope';
-        src: url('./assets/Manrope-Regular.ttf') format('opentype');
-    }
-    /* Global Style */
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-    }
-    
-    .container-fluid {
-        margin: 0 auto;
-        max-width: 100%;
-    }
-    
-    .container {
-        margin: 0 auto;
-        padding: 0 auto;
-        max-width: 1200px;
-    }
-    
-    .flex {
-        display: flex;
-    }
-    
+        @font-face {
+            font-family: 'bBagian';
+            src: url('./assets/fonts/bBagian.otf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Manrope';
+            src: url('./assets/fonts/Manrope-Bold.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Manrope';
+            src: url('./assets/fonts/Manrope-SemiBold.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Manrope';
+            src: url('./assets/fonts/Manrope-Regular.ttf') format('opentype');
+        }
+        /* Global Style */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+           
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .container-fluid {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        
+        .container {
+            margin: 0 auto;
+            padding: 0 auto;
+            max-width: 1200px;
+            overflow-x: hidden;
+        }
+        
+        .flex {
+            display: flex;
+        }
+
     header {
         position: fixed;
         width: 100%;
@@ -50,10 +57,17 @@
         height: auto;
     }
     
+    
     banner {
-        width: 100%;
+        display: block;
+        margin: 0px; 
+        padding: 0px ;
+        max-width: 100%;
         height: auto;
-        background-image: url('./assets/Rectangle\ 3.png');
+        background-image: url('./assets/images/banner.png');
+        background-size: cover;
+       
+        background-size: 100%;
         background-repeat: no-repeat;
     }
     
@@ -81,6 +95,7 @@
         list-style: none;
         align-items: center;
         padding-top: 30px;
+        font-family: 'Manrope', sans-serif;
     }
     
     .items a {
@@ -98,6 +113,8 @@
         align-items: center;
         justify-content: center;
         gap: 1em;
+        border: none;
+        
     }
     
     .icon {
@@ -110,14 +127,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 8% 0% 0% 0%;
+        padding: 10% 0% 0% 0%;
         color: white;
+       
     }
     
     .banner_head {
         font-family: 'bBagian', sans-serif;
         line-height: 150px;
-        font-size: 70px;
+        font-size: 55px;
         font-weight: 400;
     }
     
@@ -125,7 +143,7 @@
         font-family: 'Manrope', sans-serif;
         font-size: 48px;
         font-weight: 800;
-        line-height: 65.57px;
+        
     }
     
     .banner_p2 {
@@ -133,9 +151,10 @@
         font-size: 24px;
         font-weight: 500;
         line-height: 40px;
-        padding: 40px 0px 0px 0px;
+        padding: 50px 0px 0px 0px;
     }
     
+     
     .about_section {
         display: flex;
         flex-direction: row;
@@ -157,12 +176,12 @@
         font-size: 40px;
         font-weight: 400;
         line-height: 43.59px;
-        letter-spacing: 2.200000047683716px;
+        letter-spacing: 2px;
         text-align: left;
     }
     
     .section_h2 {
-        width: 585px;
+        
         font-family: 'Manrope', sans-serif;
         font-size: 24px;
         font-weight: 400;
@@ -178,11 +197,7 @@
         text-align: left;
     }
     
-    .side_line {
-        width: 200px;
-        height: 630px;
-        padding: 10% 0% 0% 0%;
-    }
+    
     
     .article_content {
         display: flex;
@@ -192,6 +207,14 @@
         padding: 10% 0% 0% 0%;
         gap: 0.5em;
     }
+
+
+    #about {
+        background-image: url('./assets//images/side_line_image.png');
+        background-repeat: no-repeat;
+       align-items: center;
+    }
+    
     
     .expeditions {
         font-family: 'bBagian', sans-serif;
@@ -204,7 +227,7 @@
     .style {
         font-family: 'Manrope', sans-serif;
         font-weight: 400;
-        line-height: 26px;
+        
     }
     
     .all_types {
@@ -212,22 +235,582 @@
         flex-direction: row;
         gap: 8em;
         padding: 40px;
+        
+        
     }
     
+.types_button{
+    border: 1px solid #FFA509;
+    color: #FFA509;
+    background-color: white;
+    width: 103px;
+    height: 112px;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Manrope',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
     .activity {
         display: flex;
         flex-direction: row;
-        gap: 3em;
-        padding: 6%;
+        gap: 1em;
+        padding: 6rem 0rem 0rem 0rem;
+        
+        
+    }
+    .activity_img{
+        width: 100%;
+height: auto;
+
+border-radius: 10px 10px 10px 10px;
+
+
+    }
+    
+    .upper_icon {
         position: relative;
+        left: 90% ;
+        bottom: 56%;
+    }
+
+    .bird{
+        display: flex;
+        flex-direction: row;
+       
+        gap: 1em;
+        padding: 10px 0px 0px 0px;
+        width: 360px;
+        height: 54px;
+        font-family: 'Manrope',sans-serif;
+        
+        font-weight: 500;
+        line-height: 27.32px;
+        letter-spacing: 0.055em;
+        text-align: left;
+
+
+
+    }
+
+
+    .wild{
+         display: flex;
+        flex-direction: row;
+       
+        gap: 8em;
+        padding: 10px 0px 0px 0px;
+        width: 360px;
+height: 54px;
+font-family: 'Manrope',sans-serif;
+
+font-weight: 500;
+line-height: 27.32px;
+letter-spacing: 0.055em;
+text-align: left;
+
+
+
+    }
+    .choose{
+        width: 250px;
+height: 30px;
+
+background: #FFA50980;
+border: none;
+
+border-radius: 3px 3px 3px 3px;
+
+font-family: 'Manrope',sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 21.86px;
+letter-spacing: 0.055em;
+
+
+    }
+   
+.location , .clock {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    padding-top: 15%;
+    font-family: 'Manrope',sans-serif;
+font-size: 12px;
+font-weight: 500;
+line-height: 21.86px;
+letter-spacing: 0.055em;
+text-align: left;
+
+}
+
+.detailes{
+    display: flex;
+    flex-direction: row;
+    gap: 9em;
+}
+
+.group_size{
+    font-family: 'Manrope',sans-serif;
+    padding-top:20px;
+    font-weight: 500;
+    line-height: 21.86px;
+    letter-spacing: 0.055em;
+    text-align: left;
+}
+.gallery_content {
+    background-image: url('./assets/images/gallery_backgroud.png');
+    background-position: center; 
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex; 
+    margin: 6rem auto 0;
+    flex-direction: column; 
+    align-items: center; 
+    background-repeat: no-repeat;
+
+
+}
+
+.gallery_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 0.5em;
+}
+
+.gallery_head h1 {
+    font-family: 'bBagian', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 39.23px;
+    letter-spacing: 0.02em;
+    text-align: center; 
+    margin: 6rem auto 0;
+}
+
+.gallery_head h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center; 
+}
+
+.gallery {
+    width: 100%;
+    max-width: 1200px; 
+    display: grid;
+    gap: 1em; 
+    justify-items: center; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,fr);
+    margin: 4em auto 0;
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+
+    
+}
+
+.image_1 {
+    grid-row: span 2; 
+    width: 484px; 
+    height: auto;
+}
+
+.image_4 {
+    grid-column: span 2;
+    width: 100%; 
+    height: auto;
+}
+.image_3{
+    width: 100%;
+
+}
+.image_2{
+    width: 100%;
+
+}
+
+
+
+
+.faq_content{
+    width: 100%;
+    height: auto;
+    display: flex; 
+    margin: 6rem auto 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+}
+
+.faq_head{
+display: flex;
+flex-direction: column;
+
+text-align: center;
+justify-content: center;
+}
+
+.faq_head h1{
+    font-family: 'bBagian',sans-serif;
+font-size: 36px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0.02em;
+
+}
+
+.faq_head h2{
+    font-family: 'Manrope',sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+
+}
+
+
+
+.faq_line{
+    width: 1200px;
+height: 0px;
+margin: 1rem auto 0;
+border: 1px 1px 1px 1px;
+
+
+}
+
+.line_content{
+    display: flex;
+    flex-direction: row;
+     
+    justify-content: space-between;
+    
+ 
+}
+
+.question{
+    font-family: 'Manrope',sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+margin-top: 20px;
+
+
+
+}
+
+
+.drop_arrow{
+    width: 20px;
+height: 10px;
+margin-top: 30px;
+display: flex;
+
+
+
+
+}
+
+.description{
+   
+font-family: 'Manrope',sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+display: flex;
+justify-content: start;
+width: 1200px;
+
+
+}
+
+
+.connect {
+    background-image: url('./assets/images/connect_background.png');
+    background-position: center; 
+    background-size: cover;
+    max-width: 100%;
+    height: 1000px;
+    max-height: auto;
+    display: flex; 
+    margin: 6rem auto 0;
+    flex-direction: column; 
+    align-items: center; 
+    background-repeat: no-repeat;
+}
+
+.transparent-box {
+ 
+    background-color: rgba(255, 255, 255, 0.24); 
+    backdrop-filter: blur(2px);
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    
+   
+    
+}
+.transparent_head{
+ 
+display: flex;
+flex-direction: column;
+
+gap: 2em;
+
+}
+.transparent_head h1{
+    width: 800px;
+    font-family: 'bBagian',sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    display: flex;
+   margin: 3rem auto 0;
+justify-content: center;
+align-items: center;
+}
+
+.picture{
+    display: flex;
+    flex-direction: row;
+  margin: 12em auto 0;
+   
+}
+
+.connect_image{
+    width: 100%;
+height: auto;
+
+
+
+}
+
+
+.transparent_content{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+}
+
+.input{
+    width: 307px;
+height: 36px;
+
+border-radius: 5px 5px 5px 5px;
+border: 1px 1px 1px 1px;
+border: 1px solid #FFFFFF;
+
+    outline: none; 
+    padding: 0.5rem;
+background-color: transparent;
+}
+.placeholder_text{
+    font-family: 'Manrope',sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0.055em;
+text-align: left;
+color: white;
+
+}
+.transparent_message{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.message_input{
+    width: 680px;
+height: 159px;
+border-radius: 5px 5px 5px 5px;
+border: 1px 1px 1px 1px;
+border: 1px solid #FFFFFF;
+
+    outline: none; 
+    padding: 0.5rem;
+background-color: transparent;
+
+}
+
+.transparent_message{
+    display: flex;
+
+    align-items: center;
+    
+}
+
+.footer{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    background-color:black;
+    width: 100%;
+height: 384px;
+max-height: 100%;
+    gap: 2em;
+    font-family: 'Manrope',sans-serif;
+line-height: 21.86px;
+text-align: left;
+color: white;
+
+
+}
+
+.footer_content{
+ 
+display: flex;
+justify-content: center;
+
+
+}
+
+.logo_image{
+    width: 91px;
+height: 112px;
+
+
+}
+
+.footer_items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+.footer_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 2rem auto 0;
+    
+}
+
+.footer_line{
+    width: 100%;
+height: auto;
+color: white;
+border: 1px 1px 1px 1px;
+
+
+}
+
+.water_mark{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+
+/* media query */
+
+
+
+@media only screen and (max-width: 1270px) {
+    banner {
+        
+      padding: 0px;
+        height: 100%;
+    }
+}
+@media (max-width: 1120px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: center;  
+        gap: 1em;  
+    }
+
+    .line {
+        width: 800px;
+        margin: 0rem auto 0; 
+    }
+
+    .nav_items {
+        flex-direction: row; 
+        gap: 2em; 
+        padding-top: 0rem;
+    }
+
+
+
+
+    .banner_head {
+        font-family: 'bBagian', sans-serif;
+    padding-top: 6rem;
+        font-size: 40px;
+        
     }
     
-    .hike {
-        position: absolute;
-        left: 31%;
+    .banner_p1 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 20px;
+      
+        margin-top: -20px;
     }
     
-    #about {
-        background-image: url(./assets/side_line_image.png);
-        background-repeat: no-repeat;
+    .banner_p2 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+        padding: 2px 0px 0px 0px;
     }
+
+
+    .banner_content {
+        
+       
+        padding-top: 0.01rem;
+        
+    }
+
+.nav_items{
+    font-size: 10px;
+}
+
+
+.button {
+    
+    min-width: 90px;
+    min-height: 25px;
+   font-size: 10px;
+    gap: .5em;
+}
+
+.icon {
+    width: 8px;
+    height: auto;
+}
+.logo_image{
+    width: 60px;
+height: 60px;
+
+
+}
+}
+
+@media only screen and (max-width: 1080px) {
+
+
+
+
+}
